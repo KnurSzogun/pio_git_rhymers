@@ -38,32 +38,73 @@ public class IntLinkedList {
         return ret;
     }
 
+    /**
+     * klasa reprezentująca węzeł w liście dwukierukowej
+     */
     private static class Node {
-
+        /**
+         * Wartość stała przechowywana w węźle
+         */
         private final int value;
+        /**
+         * Referencja do poprzedniego węzła
+         */
         private Node prev;
+        /**
+         * Referencja do następnego węzła
+         */
         private Node next;
 
+        /**
+         * Konstruktor tworzący nowy węzeł z zadaną wartością.
+         *
+         * @param i wartość przypisywana do węzła
+         */
         public Node(int i) {
             value = i;
         }
 
+        /**
+         * Metoda zwracająca wartość przechowywaną w węźle.
+         *
+         * @return wartość przechowywana w węźle
+         */
         public int getValue() {
             return value;
         }
 
+        /**
+         * Metoda zwracająca referencję do poprzedniego węzła.
+         *
+         * @return referencja do poprzedniego węzła
+         */
         public Node getPrev() {
             return prev;
         }
 
+        /**
+         * Metoda ustawiająca referencję do poprzedniego węzła.
+         *
+         * @param prev referencja do poprzedniego węzła
+         */
         public void setPrev(Node prev) {
             this.prev = prev;
         }
 
+        /**
+         * Metoda zwracająca referencję do następnego węzła.
+         *
+         * @return referencja do następnego węzła
+         */
         public Node getNext() {
             return next;
         }
 
+        /**
+         * Metoda ustawiająca referencję do następnego węzła.
+         *
+         * @param next referencja do następnego węzła
+         */
         public void setNext(Node next) {
             this.next = next;
         }
